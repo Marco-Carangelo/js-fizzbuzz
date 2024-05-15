@@ -14,7 +14,7 @@ Risoluzione:
     3.Il numero è multiplo di 5.
     4.Il numero non è ne multiplo di 3 ne multiplo di 5.
 
-- Per la risoluzione si può proseguire in due modi:
+- Per la risoluzione si può proseguire in più modi:
     1.Si può usare una struttura SWITCH o delle IF ELSE annidate che verifichino per prima la condizione più escludente, cioè quella del caso 1(If i%3===0 && If i%5===0), in modo da stampare FizzBuzz, uscire subito dal ciclo e poi proseguire con un altro numero. Le condizioni del caso 2 e 3 sono autoescludenti, quindi non ha importanza quale viene verificata prima in questo caso, l'importante è che venga tenuto il caso 4 come comportamento di DEFAULT se non si verifica nessuna delle condizioni di cui sopra.
 
     2. Si possono usare  tre strutture IF consecutive.
@@ -23,6 +23,8 @@ Risoluzione:
     Nella seconda struttura IF verifichiamo la seconda condizione (i%5 = 0), se vera concateniamo a resultPrint il valore Buzz.
     Nella terza  struttura IF assegnamo a resultPrint il valore di i se il numero non è ne multiplo di 3 ne multiplo di 5.
     In questo caso è fondamentale che venga verificato prima il caso multiplo di 3 e successivamente il caso multiplo di 5, altrimenti le stringhe verrebbero concatenate al contrario.
+
+    3. Uguale alla modalità precedente, ma viene prima verificata la condizione per cui i non è ne multiplo di 3, ne multiplo di 5, usando una IF e poi si eseguono gli altri controlli nel ramo ELSE, esattamente come nella soluzione precedente
 
 
 -Le variabili di cui abbiamo bisogno sono:

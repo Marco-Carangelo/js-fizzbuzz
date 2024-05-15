@@ -21,25 +21,45 @@ for (let i = 1; i <= 100; i++) {
 
     // }
 
-    // Print "Fizz" if i is multiple of 3
-    if (i % div3 === 0) {
+    // ****MODO 2****
 
-        resultPrint += fizz;
+    // // Print "Fizz" if i is multiple of 3
+    // if (i % div3 === 0) {
 
-    }
-    // Print "Buzz" if i is multiple of 5
-    if (i % div5 === 0) {
+    //     resultPrint += fizz;
 
-        resultPrint += buzz;
+    // }
+    // // Print "Buzz" if i is multiple of 5
+    // if (i % div5 === 0) {
 
-    }
-    //Print i if his value is not multiple of 3 and 5
+    //     resultPrint += buzz;
+
+    // }
+    // //Print i if his value is not multiple of 3 and 5
+    // if (i % div3 != 0 && i % div5 != 0) {
+
+    //     resultPrint += i;
+
+    // }
+
+    // ****MODO 3**** 
+
     if (i % div3 != 0 && i % div5 != 0) {
 
         resultPrint += i;
+    } else {
+        if (i % div3 === 0) {
+
+            resultPrint += fizz;
+
+        }
+        if (i % div5 === 0) {
+
+            resultPrint += buzz;
+
+        }
 
     }
-
 
 
 

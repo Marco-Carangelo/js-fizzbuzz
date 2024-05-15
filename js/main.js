@@ -12,7 +12,20 @@ const div5 = 5;
 console.log(div3);
 console.log(div5);
 
-for (let i = 0; i <= 100; i++) {
+console.log("****************************************");
+
+//Main Program
+
+for (let i = 1; i <= 100; i++) {
     let resultPrint = '';
+
+    if (i % div3 === 0) {
+
+        resultPrint += 'Fizz';
+
+    }
+
+
+    console.log(resultPrint + i); // Temp control print
 
 }

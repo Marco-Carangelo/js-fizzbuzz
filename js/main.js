@@ -12,3 +12,7 @@ const div5 = 5;
 console.log(div3);
 console.log(div5);
 
+for (let i = 0; i <= 100; i++) {
+    let resultPrint = '';
+
+}

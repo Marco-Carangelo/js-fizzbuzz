@@ -17,13 +17,13 @@ Risoluzione:
 - Per la risoluzione si può proseguire in due modi:
     1.Si può usare una struttura SWITCH o delle IF ELSE annidate che verifichino per prima la condizione più escludente, cioè quella del caso 1(If i%3===0 && If i%5===0), in modo da stampare FizzBuzz, uscire subito dal ciclo e poi proseguire con un altro numero. Le condizioni del caso 2 e 3 sono autoescludenti, quindi non ha importanza quale viene verificata prima in questo caso, l'importante è che venga tenuto il caso 4 come comportamento di DEFAULT se non si verifica nessuna delle condizioni di cui sopra.
 
-    2.Si può evitare completamente di verificare la condizione del caso 1.
-    Possiamo definire una variabile resultPrint di tipo stringa all'inizio del ciclo FOR, che servirà per gestire la stampa del risultato. Si usano due strutture, una IF ed una IF ELSE NON ANNIDATE e verifichiamo prima la condizione del caso 2, successivamente quella del caso 3 e manteniamo il caso 4 come DEFAULT, quindi andrebbe nell'ultima ELSE.
-    La prima IF verifica la condizione del caso 2 (i%3===0), se vera assegna alla variabile resultPrint il valore 'Fizz'. La seconda struttura verifica la condizione del caso 3 (i%5===0), se vera entra nel ramo IF e se la variabile concatena alla variabile resultPrint il valore Buzz, in questo modo, se è vuota si stamperà solo Buzz (''+'Buzz'=Buzz), se c'è già il valore Fizz si stamperà FizzBuzz('Fizz'+'Buzz'=FizzBuzz).
-    Nell'ELSE della seconda struttura gestiremo il caso di DEFAULT, cioè assegneremo a resultPrint il valore di i.
-    Il risultato verrà stampato come ultima operazione del ciclo FOR.
+    2. Si possono usare  tre strutture IF consecutive.
+    Definiamo una variabile resultPrint all'inizio del ciclo FOR e le diamo valore ''.
+    Nella prima struttura IF verifichiamo la prima condizione (i%3 = 0), se vera concateniamo a result print il valore Fizz.
+    Nella seconda struttura IF verifichiamo la seconda condizione (i%5 = 0), se vera concateniamo a resultPrint il valore Buzz.
+    Nella terza  struttura IF assegnamo a resultPrint il valore di i se il numero non è ne multiplo di 3 ne multiplo di 5.
+    In questo caso è fondamentale che venga verificato prima il caso multiplo di 3 e successivamente il caso multiplo di 5, altrimenti le stringhe verrebbero concatenate al contrario.
 
-    *Con questa soluzione è fondamentale mantenere quest'ordine nella verifica delle condizioni, altrimenti si invertirebbe l'ordine in cui le variabili verrebbero assegnate nel caso 1, ottenendo la stampa di BuzzFizz. Inoltre le strutture non possono essere IF ELSE annidate, perchè la verifica della condizione del caso 2 ci farebbe uscire dalla struttura, impedendoci di verificare la seconda condizione.
 
 -Le variabili di cui abbiamo bisogno sono:
     -Due costanti di tipo stringa con valori 'Fizz' e 'Buzz'

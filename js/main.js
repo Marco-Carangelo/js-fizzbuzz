@@ -21,7 +21,15 @@ for (let i = 1; i <= 100; i++) {
 
     if (i % div3 === 0) {
 
-        resultPrint += 'Fizz';
+        resultPrint += fizz;
+
+    }
+
+    if (i % div5 === 0) {
+
+        resultPrint += buzz;
+
+    } else {
 
     }
 
